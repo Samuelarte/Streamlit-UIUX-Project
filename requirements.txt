@@ -1,0 +1,5 @@
+streamlit
+tweepy
+python-dotenv
+pandas
+matplotlib
