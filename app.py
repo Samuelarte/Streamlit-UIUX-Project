@@ -15,10 +15,10 @@ def get_google_trends(keywords, timeframe="today 7-d", geo="US"):
     return data
 
 # Twitter API setup
-api_key = st.secrets("TWITTER_API_KEY")
-api_key_secret = st.secrets("TWITTER_API_KEY_SECRET")
-access_token = st.secrets("TWITTER_ACCESS_TOKEN")
-access_token_secret = st.secrets("TWITTER_ACCESS_TOKEN_SECRET")
+api_key = st.secrets["TWITTER_API_KEY"]
+api_key_secret = st.secrets["TWITTER_API_KEY_SECRET"]
+access_token = st.secrets["TWITTER_ACCESS_TOKEN"]
+access_token_secret = st.secrets["TWITTER_ACCESS_TOKEN_SECRET"]
 
 auth = tweepy.OAuthHandler(api_key, api_key_secret)
 auth.set_access_token(access_token, access_token_secret)
