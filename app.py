@@ -3,8 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from pytrends.request import TrendReq
 import tweepy
-import os
-import time
 
 # Initialize Pytrends
 pytrends = TrendReq()
@@ -105,6 +103,7 @@ if st.sidebar.button("Download Twitter Trends Data"):
         st.sidebar.download_button("Download CSV", csv_data, "twitter_trends.csv", "text/csv")
     else:
         st.sidebar.warning("No data available for download.")
+
 
 
 
