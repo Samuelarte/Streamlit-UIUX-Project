@@ -3,4 +3,4 @@ tweepy
 python-dotenv
 pandas
 matplotlib
-pytrends
+pytrends 
